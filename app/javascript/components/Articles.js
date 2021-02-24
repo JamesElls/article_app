@@ -9,7 +9,8 @@ const Articles = (props) => {
             return(
             <div className='article-container'>
                 <h1>{article.title}</h1>
-                <p style={{textIndent: 25}}>{article.body.split(".")[0]}.... <a href="https://youtu.be/dQw4w9WgXcQ">read more</a></p>
+                <p style={{textIndent: 25}}>{article.body.split(".")[0]}.... </p>
+                <a href={'/article/${article.id}'} >read more</a>
             </div>
             )
         })
